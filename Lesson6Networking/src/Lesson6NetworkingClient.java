@@ -20,7 +20,10 @@ public class Lesson6NetworkingClient {
 		try{
 			Socket s = new Socket(host, port);
 			Scanner in = new Scanner(s.getInputStream(), "UTF-8");
-			System.out.println("waiting...");
+			System.out.println("host: " + host);
+			System.out.println("port: " + port);
+			System.out.println();
+			
 			while(in.hasNextLine()) {
 				String line = in.nextLine();
 				System.out.println(line);

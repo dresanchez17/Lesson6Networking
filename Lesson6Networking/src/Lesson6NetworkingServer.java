@@ -22,6 +22,9 @@ public class Lesson6NetworkingServer {
 				
 				try(PrintWriter out = new PrintWriter(
 						new OutputStreamWriter(outStream,"UTF-8"), true)) {
+					out.println("HTTP/1.0 200 OK");
+					out.println("Content-Type: text/html");
+					out.println();
 					out.println("<html>");
 					out.println("<head><title>Java Networking</title></head>");
 					out.println("<body>");
